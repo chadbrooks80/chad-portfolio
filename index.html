@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<!-- Color scheme used #6 from: https://designschool.canva.com/blog/website-color-schemes/
+	Dusty: #96858f lavendar #6d7993 overcast: #9099a2 paper #d5d5d5
+ -->
+<head>
+	<meta charset="UTF-8">
+	<!-- If IE use the latest rendering engine -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width = device-width, initial-scale = 1">
+
+	<title>Chad Brooks</title>
+	
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=IM+Fell+English" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Changa" rel="stylesheet">
+
+	<!-- CDN for version 3.3.7 of bootstrap -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- Navigation Bar -->
+<header>
+	<div class="navbar navbar-inverse navbar-static-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="/" class="navbar-brand">ChadBrooks.me</a>
+				
+				<!-- button in sm and xs -->
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>	
+				</button>
+			</div>
+			<!-- menu items -->
+			<div class="collapse navbar-collapse navHeaderCollapse" id="menu">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-question-sign"></span> About Chad</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-comment"></span> Consulting</a></li>
+					</ul>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- all content that is visible without scrolling (above the fold) -->
+<div class="container-fluid" id="above-fold">
+	<!-- top header content in rounded box -->
+	<div id="above-fold-content">
+		<h1 class="text-center">Chad Brooks</h1>
+		<h2 class="text-center">Full-Stack Developer &amp;
+			<br>Senior Marketing Strategist</h2>
+	</div>
+	<div class="row">
+		<!-- three columns and the first col is blank and is removed at sm height for responsivness -->
+		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 hidden-sm hidden-xs">
+			<!-- left blank to center image and place button at right -->
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+			<!-- two images that are the same, but the styling for when visible @ xs has styling to make it a circle -->
+			<img src="img/chad-brooks.png" alt="Chad Brooks" id="above-fold-img-lg" class="chad-brooks img center-block img-responsive hidden-xs">
+			<img src="img/chad-brooks.png" alt="Chad Brooks" id="above-fold-img-sm" class="chad-brooks img center-block img-responsive hidden-lg hidden-md hidden-sm">
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 text-bottom">
+			<button id="contact-me" class="btn btn-default btn-lg">Get in Touch</button>
+		</div>
+	</div>
+</div>
+<!-- portfolio section -->
+<div class="page-header" id="portfolio-header">
+	<h1 class="text-center">My Portfolio</h1>
+</div>
+<div class="container">
+	<div class="row" id="portfolio">
+		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+			<div class="well">
+				<h2 class="text-center">Portfolio Header</h2>
+				<img src="img/portfolio.jpg" alt="portfolio" class="img-center">
+				<p class="text-center">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque blanditiis adipisci qui vitae sed repellat rerum asperiores earum porro
+				</p>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+			<div class="well">
+				<h2 class="text-center">Portfolio Header</h2>
+				<img src="img/portfolio.jpg" alt="portfolio" class="img-center">
+				<p class="text-center">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque blanditiis adipisci qui vitae sed repellat rerum asperiores earum porro
+				</p>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+			<div class="well">
+				<h2 class="text-center">Portfolio Header</h2>
+				<img src="img/portfolio.jpg" alt="portfolio" class="img-center">
+				<p class="text-center">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque blanditiis adipisci qui vitae sed repellat rerum asperiores earum porro
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- scripting -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

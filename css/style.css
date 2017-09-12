@@ -1,0 +1,150 @@
+/*set default font and text color*/
+* {
+	font-family: 'PT Mono', monospace;
+	color: #96858f;
+}
+
+/*class used for centering any images*/
+.img-center {
+	display: block;	
+	margin: 0 auto;
+}
+
+
+/* **************************************** */
+                 /*  HEADER */
+
+/*set default backgorund color for navbar and place bottom border*/
+header .navbar {
+	background-color: #d5d5d5;
+	border-bottom: solid 2px black;
+}
+
+/*font color for menu*/
+header #menu a {
+	color: #6d7993;
+}
+
+
+/*this removes the 20px by default */
+.navbar {
+	margin: 0;
+	border: 0;
+}
+
+.navbar .navbar-brand {
+	font-family: 'Pacifico', cursive;
+	font-size: 1.5em;
+	color: #6d7993;
+}
+
+
+
+/* **** ABOVE FOLD *** */
+
+/* for the content box above */
+#above-fold {
+	background-image: url("../img/above-fold-bkg.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#above-fold-content {
+	background-color: rgba(144, 153, 162, .5);
+	color: white;
+	border: solid 2px white;
+	border-radius: 13px;
+	margin: 0 auto;
+	margin-top: 7px;
+	margin-bottom: 20px;
+	width: 470px;
+}
+
+#above-fold-content h1 {
+	font-family: 'Special Elite', cursive;
+	font-size: 3em;
+	font-family: 'IM Fell English', serif;
+	font-weight: bold;
+	letter-spacing: 1.0px;
+	margin: 0;
+	margin-top: 8px;
+	margin-bottom: 0;
+}
+
+#above-fold-content h2 {
+	font-weight: bold;
+	font-style: italic;
+	letter-spacing: .05em;
+	margin: 0;
+	margin-top: 1px;
+	margin-bottom: 8px;
+	font-size: 1.5em;
+	line-height: 1.3em;
+}
+
+img#above-fold-img-lg {
+	width: 325px;
+}
+
+img#above-fold-img-sm {
+	clip-path: circle(110px at 123px 120px);
+	width: 250px;
+	padding: 15px;
+	background-color: rgba(0, 0, 0, .35);
+}
+
+#above-fold button#contact-me {
+	background-color: #96858f;
+	color: #fff;
+	border-radius: 11px;
+	margin-top: 150px;
+	font-size: 1.6em;
+	padding: 15px 30px;
+}
+
+/* ** PORTFOLIO ** */
+#portfolio {
+	margin-top: 20px;
+}
+
+#portfolio-header h1 {
+	font-weight: bold;	
+}
+
+#portfolio h2 {
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+#portfolio p {
+	margin-top: 15px;
+}
+
+/* ** MEDIA QUERIES ** */
+@media screen and (max-width: 768px) {
+	div#portfolio .well {
+		margin: 0 auto;
+		margin-bottom: 25px;
+		max-width: 450px;
+	}
+	
+	#above-fold-content {
+	font-size: .8em;
+	margin: 0 auto;
+	margin-top: 7px;
+	margin-bottom: 7px;
+	width: 350px;
+	}
+
+	button#contact-me {
+		position: relative;
+		display: block;
+		margin-top: 0;
+		margin: 0 auto;
+		bottom: 200px;
+		/*remove extra margin spacing because of image clipping*/
+		margin-bottom: -170px;
+	}
+}
